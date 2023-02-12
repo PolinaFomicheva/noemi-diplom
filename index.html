@@ -7,10 +7,44 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Popup -->
+  <div class="popup-container">
+    <form action="/#" class="popup">
+      <button class="btn-close"></button>
+      <h2 class="popup-title">
+        <a href="#0" class="popup-title-link">Ваш фидбек</a>
+      </h2>
+      <section class="attendance">
+        <div class="p-text">Как часто вы заходите на сайт?</div>
+        <select class="select-attendance">
+          <option value="1">Почти каждый день</option>
+          <option value="2">Раз в несколько дней</option>
+          <option value="3">Рез в несколько недель</option>
+          <option value="4">Несколько раз в год</option>
+          <select>
+      </section>
+      <section class="popup-mail">
+        <div class="p-text">Вы подписаны на e-mail рассылку?</div>
+<div class="radio">
+<input id="yes" class="radio-btn" type="radio" name="gender" value="yes">
+ <label class="radio-text" for="yes">Да</label>
+ <input id="not" class="radio-btn" type="radio" name="gender" value="not">
+    <label class="radio-text" for="not">Нет</label>
+</div>
+      <section class=" popup-info">
+        <div class="p-text">Расскажите, какой контент вы бы хотели видеть на нашем сайте ?</div>
+        <textarea class="field-message" placeholder="Может, больше рецептов?"></textarea>
+      </section>
+      <button type="submit" class="button-submit">
+        Отправить
+      </button>
+    </form>
+  </div>
 <!--Шапка-->
 <header class="header">
     <div class="container">
-      <img src="svg/noemi-logo.svg" alt="Noemi" class="logo">
+  
+    <img src="svg/noemi-logo.svg" alt="Noemi" class="logo"> 
       <nav class="menu">
         <ul class="menu-list">
           <li class="menu-list-item">
@@ -26,6 +60,9 @@
           <li class="menu-list-item">
             <a class="menu-link" href="#0">контакты</a></li>
         </ul>
+        <div class="burger-menu">
+          <a href="#0" class="burger-link"><img class="burger-img" src="svg/icons8-menu.svg"></a>
+        </div>
       </nav>
     </div>
     <h1 class="caption">блог о творчестве, спорте, и образе жизни</h1>
@@ -102,15 +139,15 @@
 						</div>
 					</div>
 				</div>
-				<img class="trend-img" src="images/trend4.jpg" alt="Куски твердого сыра">
+				<img class="trend-img" src="images/trend4.jpg" alt="Лимоны в ящике">
 			</article>
 	</section>
 	<!--Основные посты-->
         <main class="main">
-  <div class="post_container">
-    <section class="post">
+  <section class="post_container">
+    <div class="post">
         <img class="thumbnail" src="images/last-post1.jpg"
-             alt="deserted beach">
+             alt="Песчаный берег">
         <div class="post-content">
           <header class="section-header">
             <ul class="meta-list">
@@ -130,10 +167,10 @@
                 <div class="text"><p>Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
           </div>
       </div>
-    </section>
-    <section class="post">
+    </div>
+    <div class="post">
         <img class="thumbnail" src="images/last-post2.jpg"
-             alt="girl doing fitness">
+             alt="Девушка занимается йогой">
         <div class="post-content">
           <header class="section-header"><ul class="meta-list">
               <li class="meta-item">
@@ -152,18 +189,17 @@
             <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
           </div>
         </div>
-    </section>
-    <section class="post">
+    </div>
+    <div class="post">
         <img class="thumbnail" src="images/last-post3.jpg"
-             alt="crowd of people">
+             alt="Толпа людей">
         <div class="post-content">
-          <header class="section-header">
+                    <header class="section-header">
 <ul class="meta-list">
               <li class="meta-item">
                 <a href="#0" class="meta-link">music</a>
             </li>
             </ul>
-            </header>
           <h2 class="title"><a href="#0" class="post-link">лучшие музыкальные фестивали этого лета</a>
          </h2>
             <time class="time" datetime="2019-06-10">10 июня 2019</time>
@@ -173,11 +209,11 @@
             <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
               <p>Мы составили список лучших летних фестивалей по всему миру.</p>
           </div>
-      </div>
-    </section>
-    <section class="post">
+        </div>
+    </div>
+    <div class="post">
         <img class="thumbnail" src="images/last-post4.jpg"
-             alt="table with food">
+             alt="Стол с едой">
         <div class="post-content">
           <header class="section-header">
 <ul class="meta-list">
@@ -188,7 +224,6 @@
               <a href="#0" class="meta-link">food</a>
             </li>
             </ul>
-              </header>
           <h2 class="title"><a href="#0" class="post-link">наукоёмкий подход к кулинарии</a>
           </h2>
             <time class="time" datetime="2019-06-10">10 июня 2019</time>
@@ -198,10 +233,10 @@
             <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
           </div>
         </div>
-    </section>
-    <section class="post">
+    </div>
+    <div class="post">
         <img class="thumbnail" src="images/last-post5.jpg"
-             alt="hang out spot">
+             alt="Hang out spot">
         <div class="post-content">
           <header class="section-header">
 <ul class="meta-list">
@@ -223,15 +258,17 @@
             <div class="text"><p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
           </div>
       </div>
-    </section>
-      </div>
+    </div>
+    </section> 
+
       <!--Сайдбар-->
+
   <aside class="sidebar">
       <section class="new-posts">
         <h3 class="heading">новые посты</h3>
         <article class="sidebar_content">
          <img class="sidebar-img" src="images/2.jpg"
-                   alt="deserted beach">
+                   alt="Песчаный пляж">
             <header class="sidebar-header">
             <time class="sidebar-time" datetime="2019-06-14">14 июня 2019</time>
             <h4 class="headline">
@@ -251,7 +288,7 @@
           </header>
         </article>
           <article class="sidebar_content">
-              <img class="sidebar-img" src="images/45.jpg" alt="piano">
+              <img class="sidebar-img" src="images/45.jpg" alt="Кресло и пианино">
             <header class="sidebar-header">
             <time class="sidebar-time" datetime="2019-06-14">14 июня 2019</time>
             <h4 class="headline">
@@ -262,7 +299,7 @@
         </article>
            <article class="sidebar_content">
               <img class="sidebar-img" src="images/501.jpg"
-                   alt="table with food">
+                   alt="Стол с едой">
             <header class="sidebar-header">
             <time class="sidebar-time" datetime="2019-06-14">14 июня 2019</time>
             <h4 class="headline">
@@ -272,7 +309,7 @@
         </article>
           <article class="sidebar_content">
               <img class="sidebar-img" src="images/7.jpg"
-                   alt="three girls back">
+                   alt="Три девушки">
             <header class="sidebar-header">
             <time class="sidebar-time" datetime="2019-06-14">14 июня 2019</time>
             <h4 class="headline">
@@ -333,28 +370,22 @@
         <h3 class="heading">темы</h3>
         <ul class="category-list">
           <li class="category-item">
-            <a href="#0" class="category">Красота</a>
-            <sup class="number">12</sup>
+            <a href="#0" class="category">Красота<sup class="number">12</sup></a>
           </li>
           <li class="category-item">
-            <a href="#0" class="category">Здоровье</a>
-            <sup class="number">4</sup>
+            <a href="#0" class="category">Здоровье<sup class="number">4</sup></a>
           </li>
           <li class="category-item">
-            <a href="#0" class="category">Образ жизни</a>
-            <sup class="number">145</sup>
+            <a href="#0" class="category">Образ жизни<sup class="number">145</sup></a>
           </li>
           <li class="category-item">
-            <a href="#0" class="category">Музыка</a>
-            <sup class="number">28</sup>
+            <a href="#0" class="category">Музыка<sup class="number">28</sup></a>
           </li>
           <li class="category-item">
-            <a href="#0" class="category">Спорт</a>
-            <sup class="number">62</sup>
+            <a href="#0" class="category">Спорт<sup class="number">62</sup></a>
           </li>
           <li class="category-item">
-            <a href="#0" class="category">Йога</a>
-            <sup class="number">8</sup>
+            <a href="#0" class="category">Йога<sup class="number">8</sup></a>
           </li>
         </ul>
       </section>
@@ -367,75 +398,68 @@
 		<h2 class="shop-title">
 			<a href="#0" class="shop-title-link">Наши изделия</a>
 		</h2>
+    <div class="products-container">
 		<article class="products">
-			<div class="product-container">
-				<div class="product-picture product1">
-					<img class="product-picture-link" src="images/shop-item-desk1.jpg" alt="Подушка">
-				</div>
-				<div class="product-info">
-					<h3 class="product-title">
-						<a href="#0" class="product-title-link">Подушки на диван</a>
-					</h3>
-					<div class="product-text">Набор из двух подушек с модными принтами. Видео о создании
-						<a href="#0" class="here">здесь</a>.
-					</div>
-					<div class="product-buy-container">
-						<div class="price-container">
-							<div class="product-price-all">
-								1000 ₽
-							</div>
-							<div class="product-price-discount">800 ₽</div>
-						</div>
-						<a href="#0" class="product-button">В Магазин</a>
-					</div>
-				</div>
-			</div>
-			 </article>
+              <div class="product-picture product1" alt="Подушка"></div>
+        <div class="product-info">
+          <h3 class="product-title">
+            <a href="#0" class="product-title-link">Подушки на диван</a>
+          </h3>
+          <div class="product-text">Набор из двух подушек с модными принтами. Видео о создании
+            <a href="#0" class="here"> здесь</a>.
+          </div>
+          <div class="product-buy-container">
+            <div class="price-container">
+              <div class="product-price-all">
+                1000 ₽
+              </div>
+              <div class="product-price-discount">800 ₽</div>
+              </div>
+            <span class="product-hidden">Кнопка в магазин</span>
+          <button class="product-button">В магазин</button>
+        </div>
+          </div>
+    </article>
 		<article class="products">
-			<div class="product-container">
-				<div class="product-picture product2">
-					<img class="product-picture-link" src="images/shop-item-desk2.jpg" alt="Подушка">
-				</div>
+					<div class="product-picture product2" alt="Кукла зайчик"></div>
 				<div class="product-info">
 					<h3 class="product-title">
 						<a href="#0" class="product-title-link">Кукла «Зайчик»</a>
 					</h3>
-					<div class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="#0">весенняя серия постов</a>в блоге и несколько подкастов.
+					<div class="product-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="#0"> весенняя серия постов</a> в блоге и несколько подкастов.
 					</div>
 					<div class="product-buy-container">
-						<div class="price-container">
+            <div class="price-container">
 							<div class="product-price-discount">
 								3500 ₽
 							</div>
-						<a href="#0" class="product-button">В Магазин</a>
-					</div>
+            </div>
+						<span class="product-hidden">Кнопка в магазин</span>
+          <button class="product-button">В магазин</button>
+        </div>
 				</div>
-			</div>
-		</div>
 			 </article>
 		<article class="products">
-			<div class="product-container">
-				<div class="product-picture product3">
-					<img class="product-picture-link" src="images/shop-item-desk3.jpg" alt="Подушка">
-				</div>
+					<div class="product-picture product3" alt="Шестиугольная рамка"></div>
 				<div class="product-info">
 					<h3 class="product-title">
 						<a href="#0" class="product-title-link">Шестиугольная рамка</a>
 					</h3>
-					<div class="product-text">Необычная рамка для украшения дома из видео<a href="#0">«Как сделать рамку из подручных средств за 30 минут»</a> 
+					<div class="product-text">Необычная рамка для украшения дома из видео<a href="#0"> «Как сделать рамку из подручных средств за 30 минут»</a>. 
 					</div>
 					<div class="product-buy-container">
-						<div class="price-container">
+            <div class="price-container">
 							<div class="product-price-all">
 								500 ₽
 							</div>
 							<div class="product-price-discount">400 ₽</div>
-						</div>
-						<a href="#0" class="product-button">В Магазин</a>
-					</div>
+            </div>
+						<span class="product-hidden">Кнопка в магазин</span>
+          <button class="product-button">В магазин</button>
+        </div>
 				</div>
-			</div>
 			 </article>
+       </div>
 			</section>
 <!--Соцсети-->
 <footer class="footer">
