@@ -1068,6 +1068,7 @@ width: 82%;
     line-height: 29px;
   }
 
+@media (orientation:portrait) {
   .trends-posts-container {
     width: 100%;
     display: flex;
@@ -1075,6 +1076,7 @@ width: 82%;
     justify-content: space-between;
     background-color: inherit;
   }
+}
 
   .category {
     font-family: OpenSans;
@@ -1264,9 +1266,9 @@ width: 82%;
   }
 
 .trend {
-    width: 100%;
-    height: 260px;
+  height: 320px;
 }
+
 
 .trend:nth-last-child(n+1) {
   margin-right: 5px;
@@ -1274,6 +1276,17 @@ width: 82%;
 
 .trend:nth-child(4) {
   margin-right: 0px;
+}
+
+/*.trend-title-link {*/
+    font-size: 0.9rem;
+    line-height: 22px;
+}
+
+/*.trend-content {*/
+  padding: 0px 10px 10px 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 }
 }
@@ -1341,22 +1354,13 @@ width: 82%;
     line-height: 29px;
   }
 
+@media (orientation: portrait) {
   .trends-posts-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: inherit;
-  }
-
-  .category {
-    font-family: OpenSans;
-    font-weight: bold;
-  }
-
-  .trend-title-link {
-    font-size: 17px;
-    line-height: 22px;
   }
 
   .trend {
@@ -1368,6 +1372,17 @@ width: 82%;
     margin-right: 0px; 
     margin-left: 0px;
 }
+}
+
+  .category {
+    font-family: OpenSans;
+    font-weight: bold;
+  }
+
+  .trend-title-link {
+    font-size: 17px;
+    line-height: 22px;
+  }
 
   .main {
    margin-top: 50px;
@@ -1531,7 +1546,7 @@ width: 82%;
     margin-top: 50px;
   }
 
-  @media (orientation: landscape) {
+@media (orientation: landscape) {
   .trend {
     width: calc(50% - 2px);
     height: 250px;
@@ -1539,6 +1554,10 @@ width: 82%;
 
   .trend:nth-last-child(n+1) {
     margin-right: 0px; 
+}
+
+.trends-posts-container {
+  flex-wrap: wrap;
 }
 }
 }
